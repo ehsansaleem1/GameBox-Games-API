@@ -1,0 +1,56 @@
+import './carousel.css'
+import {useState} from 'react'
+
+export default function Carousel(props) {
+  const [img, setImg] = useState("")
+  if (props.content.isLoading) {
+    return(
+      <h1>Data is Loading</h1>
+    )
+  }
+
+  var def = props.content.items[0].background_image
+
+  
+
+  let i=0;
+
+
+  function forwardImg() {
+    console.log(i)
+    if (i<19) {
+      i=i+1;
+    }
+    else {
+      i=0
+    }
+    changeImg()
+  }
+
+  function previousImg() {
+    console.log(i)
+    if (i>0 && i<19) {
+      i=i-1;
+    }
+    else {
+      i=19
+    }
+    changeImg()
+  }
+
+  function changeImg() {
+    setImage(props.content.items[i].background_image)
+  }
+
+  return(
+    <main>
+      <div className="car-home" style={{background: `url(${img})`}}>
+        <h1 onClick={previousImg} className='btn-1'>&larr;</h1>
+        <div className="cont">
+          
+        </div>
+        <h1 onClick={forwardImg} className='btn-2'>&rarr;</h1>
+      </div>
+    </main>
+  )
+}

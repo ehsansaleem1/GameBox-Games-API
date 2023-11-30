@@ -1,0 +1,22 @@
+.btn-categ {
+  padding: 0.5rem 2rem;
+  margin: 1rem 1rem;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.btn-categ:hover {
+  transform: scale(1.1);
+}
+
+.main-genre {
+  background: #3a3636;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  margin-bottom: 2rem;
+}

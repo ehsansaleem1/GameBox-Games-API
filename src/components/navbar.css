@@ -1,0 +1,104 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: #1B1212;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  height: 3.5rem;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50%;
+  margin: 0 1.4rem;
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.btn-login {
+  padding: 0.5rem 2.75rem;
+  background: white;
+  color: black;
+  border: none;
+  margin: 0 1.4rem;
+  cursor: pointer;
+}
+
+.btn-open {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    align-items: space-around;
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .btn-open {
+    padding: 0 0.75rem;
+    font-size: 2.4rem;
+    color: white;
+    background: #514d4d;
+    border: none;
+    display:block;
+  }
+
+  .d-show {
+    display: block;
+  }
+
+  .nav-mobile {
+    color: white;
+    background: #211c1c;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav-mobile> ul, .nav-mobile > button {
+    margin: 1rem 0;
+  }
+
+  .nav-mobile > ul {
+    font-size: 1.3rem;
+  }
+
+    .nav-mobile > ul > .link {
+      margin-top: 0.75rem;
+    }
+
+  .close-btn {
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,68 @@
+.genre-card {
+  height: 25rem;
+  width: 20rem;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor: pointer;
+  filter: brightness(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
+.genre-card:hover {
+  filter: brightness(75%);
+}
+
+.genres-contain {
+  padding: 3rem 0;
+  background: #3e3737;
+  color: white;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+  width: 100%;
+}
+
+.genre-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+}
+
+.genre-img {
+  height: 25rem;
+  width: 20rem;
+  filter: brightness(50%);
+}
+
+.genre-name {
+  color: #a69b9b;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width:600px) {
+  .d-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .genre-card {
+    width: 100%;
+    height: 30rem;
+  }
+}

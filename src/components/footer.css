@@ -1,0 +1,27 @@
+.footer-main {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 2rem 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.head-footer {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.upper-footer {
+  margin-bottom: 3rem;
+}
+
+.lower-footer-copyright {
+  padding: 1rem 0;
+  background: #1d1b1b;
+}
+
+.sub-head {
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+  color: #989090;
+}

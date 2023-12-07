@@ -18,7 +18,7 @@ export default function genreCateg() {
     setTimeout(()=> {
       async function getGenres() {
 
-        const resp = await fetch(`https://api.rawg.io/api/games?genres=${newquery2}&page_size=25&key=7468c0691a294985aee336bff6bfef59`)
+        const resp = await fetch(`https://api.rawg.io/api/games?genres=${newquery2}&page_size=25&key=API_KEY`)
 
         const jsonresp = await resp.json()
 

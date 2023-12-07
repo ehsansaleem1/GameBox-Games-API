@@ -17,7 +17,7 @@ export default function DescPage() {
   useEffect(() => {
     setTimeout(() => {
       async function getDetails() {
-        const resp = await fetch(`https://api.rawg.io/api/games/${newquery2}?key=7468c0691a294985aee336bff6bfef59`)
+        const resp = await fetch(`https://api.rawg.io/api/games/${newquery2}?key=API_KEY`)
 
         const jsonresp = await resp.json()
 

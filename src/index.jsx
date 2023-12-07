@@ -6,8 +6,8 @@ import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Auth0Provider
-    domain='dev-n83sckv1u768rsp5.us.auth0.com'
-    clientId='ESBK1ZuUDDNVmLCniwIpcRPeK6k4683D'
+    domain='authDomain'
+    clientId='cliendId'
     authorizationParams={{
       redirect_uri: window.location.origin
     }}

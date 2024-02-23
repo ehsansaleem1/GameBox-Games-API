@@ -11,7 +11,7 @@ export default function GamePage(props) {
     setTimeout(() => {
       async function getGames() {
         try {
-          const resp = await fetch("https://api.rawg.io/api/games?page_size=40&key=API_KEY")
+          const resp = await fetch("https://api.rawg.io/api/games?page_size=40&key=7468c0691a294985aee336bff6bfef59")
 
           const jsonresp = await resp.json()
 

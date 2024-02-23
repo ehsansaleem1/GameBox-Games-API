@@ -23,7 +23,7 @@ export default function PostBundle(props) {
               {post.stores.map((store, i) => {
                 return(
                   <button key={store.store.name} className='shop-btn
-                    '><a href={store.store.domain}>{store.store.name}</a></button>
+                    '><a href={"https://" + store.store.domain}>{store.store.name}</a></button>
                 )
               })}
             </div>

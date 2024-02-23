@@ -11,7 +11,7 @@ export default function DevPage() {
     setTimeout(() => {
       async function getDevs() {
         try {
-          const resp = await fetch("https://api.rawg.io/api/developers?page_size=40&key=API_KEY")
+          const resp = await fetch("https://api.rawg.io/api/developers?page_size=40&key=7468c0691a294985aee336bff6bfef59")
 
           const jsonresp = await resp.json()
 

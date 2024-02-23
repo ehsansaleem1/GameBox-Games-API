@@ -13,7 +13,7 @@ export default function Genres() {
   useEffect(() => {
     setTimeout(()=> {
       async function getGenres() {
-        const resp2 = await fetch("https://api.rawg.io/api/genres?key=API_KEY")
+        const resp2 = await fetch("https://api.rawg.io/api/genres?key=7468c0691a294985aee336bff6bfef59")
 
         const jsonresp2 = await resp2.json()
 
@@ -28,7 +28,7 @@ export default function Genres() {
 
         
         
-        const resp = await fetch(`https://api.rawg.io/api/games?page_size=25&key=API_KEY`)
+        const resp = await fetch(`https://api.rawg.io/api/games?page_size=25&key=7468c0691a294985aee336bff6bfef59`)
 
         const jsonresp = await resp.json()
 

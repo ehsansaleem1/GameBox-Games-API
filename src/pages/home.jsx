@@ -30,7 +30,7 @@ export default function Home() {
       async function getGames() {
         
           try {
-            const resp = await fetch("https://api.rawg.io/api/games?key=7468c0691a294985aee336bff6bfef59")
+            const resp = await fetch(`https://api.rawg.io/api/games?key=${process.env(API_KEY)}`)
 
             const jsonresp = await resp.json()
             
@@ -43,7 +43,7 @@ export default function Home() {
             
             setGames(newresp)
 
-             const resp2 = await fetch("https://api.rawg.io/api/genres?key=7468c0691a294985aee336bff6bfef59")
+             const resp2 = await fetch(`https://api.rawg.io/api/genres?key=${process.env(API_KEY)}`)
             
             const jsonresp2 = await resp2.json()
             
@@ -56,7 +56,7 @@ export default function Home() {
             
             setGenres(newresp2)
 
-            const resp3 = await fetch("https://api.rawg.io/api/developers?key=7468c0691a294985aee336bff6bfef59")
+            const resp3 = await fetch(`https://api.rawg.io/api/developers?key=${process.env(API_KEY)}`)
             const jsonresp3 = await resp3.json()
             console.log(jsonresp3)
             var newresp3 = {
@@ -65,7 +65,7 @@ export default function Home() {
             }
             setDevs(newresp3)
 
-            const resp4 = await fetch("https://api.rawg.io/api/platforms?key=7468c0691a294985aee336bff6bfef59")
+            const resp4 = await fetch(`https://api.rawg.io/api/platforms?key=${process.env(API_KEY)}`)
             
             const jsonresp4 = await resp4.json()
             

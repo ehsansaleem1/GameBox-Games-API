@@ -43,7 +43,7 @@ export default function Home() {
             
             setGames(newresp)
 
-             const resp2 = await fetch(`https://api.rawg.io/api/genres?key=7468c0691a294985aee336bff6bfef59}`)
+             const resp2 = await fetch(`https://api.rawg.io/api/genres?key=7468c0691a294985aee336bff6bfef59`)
             
             const jsonresp2 = await resp2.json()
             
